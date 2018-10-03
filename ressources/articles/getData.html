@@ -1,0 +1,32 @@
+<article id="getData" class="list scroll">
+        <ul>
+            <li>
+              	<p class="text justify">Les données affichées sont issues des paramètres <span class="color-info">GET</span> passés dans l'attribut <span class="color-info">data-view-article</span> à la suite de l'id de l'article et stocké par Feather dans la variable <span class="color-info">Feather.get</span>. L'id de l'article est <span class="color-info">#getData</span>, la valeur de l'attribut <span class="color-info">data-view-article</span> est donc <span class="color-info">#getData?cle1=valeur1&cle2=valeur2&cle3=Ma+valeur+3</span></p>
+            </li>
+            <li id="resultGet">
+            </li>
+            <li>
+                <p class="margin-bottom text justify">
+                    Les différentes données stocké en javascript peuvent être <strong class="color-conf">injectées automatiquement</strong> dans une page de votre application grâce au gestionnaire de template de Feather.
+                </p>
+                <p>
+                    Si vous placez dans votre DOM une balise du type <span class="color-info">{\{XXXX}\}</span> elle sera remplacée par la valeur correspondante si celle-ci existe, sinon elle sera remplacée par du vide.
+                </p>
+            </li>
+            <li>
+                <p class="margin-bottom">Exemple de template avec get :</p>
+                <p>Ma valeur 1 : {{Feather.get.cle1}}</p>
+                <p>Ma valeur 2 : {{Feather.get.cle2}}</p>
+                <p>Ma valeur 3 : {{Feather.get.cle3}}</p>
+                <p>Ma valeur 4 qui n'existe pas : {{Feather.get.cle4}}</p>
+            </li>
+        </ul>
+    </article>
+    <script>
+    	$(document).ready(function(){
+            $('#resultGet').html('');
+    		for(var i in Feather.get){
+                $('#resultGet').append('<p>'+i+' : '+Feather.get[i]+'</p>');
+            }
+    	});
+    </script>

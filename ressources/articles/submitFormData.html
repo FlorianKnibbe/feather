@@ -1,0 +1,35 @@
+<article id="submitDataForm" class="list scroll">
+        <ul>
+            <li>
+              	<p class="text justify">Les données affichées sont issues du formulaire et stockées automatiquement par Feather dans la variable <span class="color-info">Feather.post</span> grâce à l'attribut html <span class="color-info">data-sendPost</span> présent sur le bouton <span class="color-conf">"Valider"</span> de l'article <strong>"#formData"</strong>.</p>
+            </li>
+            <li id="resultPost">
+            </li>
+            <li>
+                <a class="button fullWidth margin-top" data-view-article="#formData">Retour</a>
+            </li>
+        </ul>
+    </article>
+    <script>
+    
+    	$(document).ready(function(){
+    		var $pageContent = $('#submitDataForm #resultPost');
+    		$pageContent.append('<p><span class="color-theme bold">Nom : </span>'+Feather.post.nom+'</p>');
+    		$pageContent.append('<p class="padding-top"><span class="color-theme bold">Plats favoris : </span></p>');
+            var list = '<ul class="square">';
+            for(var i in Feather.post.plats){
+                list += '<li>'+Feather.post.plats[i]+'</li>';
+            }
+            list += '</ul>';
+            $pageContent.append(list);
+    		$pageContent.append('<p class="padding-top"><span class="color-theme bold">Boisson : </span>'+Feather.post.boisson+'</p>');
+            $pageContent.append('<p class="padding-top"><span class="color-theme bold">Coding :</span></p>');
+            list = '<ul class="circle">';
+            for(var i in Feather.post.coding){
+                list += '<li>'+i+' : '+Feather.post.coding[i]+'</li>';
+            }
+            list += '</ul>';
+            $pageContent.append(list);
+    	});
+
+    </script>

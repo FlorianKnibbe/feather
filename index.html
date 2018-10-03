@@ -1,0 +1,918 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Feather Framework</title>
+    <meta name="description" content="">
+    <meta name="author" content="Florian Knibbe">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="apple-touch-icon" href="./img/featherLogoWebApp60.png">
+    <link rel="apple-touch-icon-precomposed" href="./img/featherLogoWebApp.png">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="./img/featherLogoWebApp196.png">
+    <link rel="shortcut icon" sizes="128x128" href="./img/featherLogoWebApp.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./css/feather-base.css">
+    <link rel="stylesheet" href="./css/feather-icons.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div data-role="preloader" class="text center">
+        <div style="display: table; height: 100%;width:100%; overflow: hidden;">
+           <div style="display: table-cell; vertical-align: middle;width:100%;">
+            <img src="./img/featherApp.png" width="250" height="250" alt="Feather framework"/>
+            <h1 class="padding-bottom">Feather preloader</h1>
+            <div class="text large"><span class="icon-cog rotate"></span></div>
+         </div>
+     </div>
+ </div>
+ <div data-role="feather">
+
+
+    <!-- Section main -->
+    <section id="main" class="showAsideOnLargeScreen showAsideOnSwipe">
+        <header>
+            <nav class="on-left">
+                <a class="button color-theme-darken hover-white" data-view-aside href="#">
+                    <span class="icon-bars"></span>
+                </a>
+            </nav>
+            <h1 class="title">Feather</h1>
+            <nav class="on-right">
+                <a href="#" class="button color-theme-darken hover-white"><abbr class="text tiny">v0.5</abbr></a>
+            </nav>
+        </header>
+        <!-- Menu <nav> dispo pour les différents <article> de la <section> -->
+        <nav data-role="groupBarTop" data-for-articles="#panels-article #panels-article2 #panels-article3 #panels-article4">
+            <a href="#" data-view-article="#panels-article"><abbr>Article 1</abbr></a>
+            <a href="#" data-view-article="#panels-article2"><abbr>Article 2</abbr><span class="featherTag err">19</span></a>
+            <a href="#" data-view-article="#panels-article3"><abbr>Article 3</abbr></a>
+            <a href="#" data-view-article="#panels-article4"><abbr>Article 4</abbr></a>
+        </nav>
+
+        <article id="listes" class="list scroll">
+            <ul>
+                <li class="clickable">
+                    li .clickable
+                </li>
+
+                <li class="arrowRight">
+                    li.arrowRight
+                    <span class="icon-angle-right absolute"></span>
+                </li>
+
+                <li class="arrowRight">
+                    <strong class="block">li .arrowRight</strong>
+                    <small class="block">élément small</small>
+                    <small>autre élément small</small>
+                </li>
+                <li class="header">
+                    li.header
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="on-right featherTag warn">.on-right.featherTag.warn</div>
+                        <strong class="block">élément strong block</strong>
+                        <small class="block">élément small block</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="on-right featherTag info">.on-right.featherTag.info</div>
+                        <strong>élément strong</strong>
+                        <small>élément small</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="on-right featherTag err">.on-right.featherTag.err</div>
+                        <strong>élément strong</strong>
+                        <small>élément small</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="on-right featherTag">.on-right.featherTag</div>
+                        <strong>élément strong</strong>
+                        <small>élément small</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="on-right featherTag conf">.on-right.featherTag.conf</div>
+                        <strong>élément strong</strong>
+                        <small>élément small</small>
+                    </a>
+                </li>
+                <li class="header bck-theme-secondary color-white">li.header.bck-theme-secondary</li>
+                <li>
+                    <a href="#">
+                        <div class="on-right" data-icon="lock"></div>
+                        <span class="block">.data-icon.on-right</span>
+                    </a>
+                </li>
+                <li class="header bck-lightgrey color-black">li.header.bck-lightgrey</li>
+                <li>
+                    <a href="#" class="button tiny theme on-right">button</a>
+                    <span class="block">.button.theme.tiny.on-right</span>
+                </li>
+
+
+                <li class="thumbnail big">
+                    <img class="bck-theme" src="./img/feather144.png" width="65" height="65"/>
+                    <div>
+                        <div class="on-right text tiny">.on-right.text.tiny</div>
+                        <strong class="block">.thumbnail.big</strong>
+                        <span class="text small block">
+                            Une info en small
+                        </span>
+
+                    </div>
+                </li>
+
+                <li class="thumbnail">
+                    <img class="bck-theme" src="./img/feather144.png" width="44" height="44"/>
+                    <div>
+                        <div class="on-right text tiny">.on-right.text.tiny</div>
+                        <strong>thumbnail</strong>
+                        <span class="text tiny block">.thumbnail</span>
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, aliquam, nisi commodi blanditiis.
+                        </small>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="icon-globe"></span>
+                    <strong class="margin-left">li .icon-globe</strong>
+                    <small>texte en small</small>
+                </li>
+                <li class="header bck-theme color-white">li.header.bck-theme</li>
+                <li class="conf">
+                    <strong>li.conf</strong>
+                    <small>texte en small</small>
+                </li>
+                <li class="err">
+                    <strong>li.err</strong>
+                    <small>texte en small</small>
+                </li>
+                <li class="warn">
+                    <strong>li.warn</strong>
+                    <small>texte en small</small>
+                </li>
+                <li class="info">
+                    <strong>li.info</strong>
+                    <small>texte en small</small>
+                </li>
+            </ul>
+        </article>
+
+        <article id="main-article" class="list scroll">
+            <ul>
+                <li class="text small left">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </li>
+                <li>
+                    <strong class="text bold">Optimisé</strong>
+                    <p class="text tiny justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </li>
+                <li>
+                    <strong class="text underline">Simple</strong>
+                    <p class="text big right">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   </p>
+               </li>
+               <li>
+                <strong class="blotext italic">Clair et personnalisable</strong>
+                <p class="text large center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="text xl center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="text xxl center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </li>
+            <li>
+                <strong class="text bold"><span class="text line-through">Not</span> Cross plateform</strong>
+                <p class="text tiny opacity">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </li>
+            <li>
+                <strong class="text bold">Open source</strong>
+                <p class="text tiny">
+                    <span class="color-theme">.color-theme</span> dolor sit amet, <span class="color-conf">.color-conf</span> adipisicing elit, <span class="color-info">.color-info</span> sed do <span class="color-warn">.color-warn</span> eiusmod tempor <span class="color-err">.color-err</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ol :
+                    <ol>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ul :
+                    <ul>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ul .circle :
+                    <ul class="circle">
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ul .no-bullet :
+                    <ul class="no-bullet">
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ul .square :
+                    <ul class="square">
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    List ul .disc :
+                    <ul class="disc">
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                    </ul>
+                </p>
+            </li>
+        </ul>
+    </article>
+
+    <article class="list scroll" id="panels-article">
+        <ul>
+            <li>MOn contenu</li>
+        </ul>
+    </article>
+    <article class="list scroll" id="panels-article2">
+        <ul>
+            <li>MOn contenu article 2</li>
+        </ul>
+    </article>
+    <article class="list scroll" id="panels-article3">
+        <ul>
+            <li>MOn contenu article 3</li>
+        </ul>
+    </article>
+    <article class="list scroll" id="panels-article4">
+        <ul>
+            <li>MOn contenu article 4</li>
+        </ul>
+    </article>
+
+    <article class="list scroll" id="formElement">
+        <ul>
+            <li>
+                <div class="form">
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input text :</label>
+                        <input type="text" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input disabled :</label>
+                        <input disabled type="text" name="" value="Je suis disabled"/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input readonly :</label>
+                        <input readonly type="text" name="" value="Je suis readonly"/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-conf">Input conf :</label>
+                        <input class="conf" type="text" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-warn">Input warn :</label>
+                        <input class="warn" type="text" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-err">Input err :</label>
+                        <input class="err" type="text" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-info">Input info :</label>
+                        <input class="info" type="text" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input password :</label>
+                        <input type="password" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input date :</label>
+                        <input type="date" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input dateTime :</label>
+                        <input type="datetime" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input email :</label>
+                        <input type="email" name="" value=""/>
+                    </div> 
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input number :</label>
+                        <input type="number" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input search :</label>
+                        <input type="search" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input tel :</label>
+                        <input type="tel" name="" value=""/>
+                    </div> 
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input time :</label>
+                        <input type="time" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Input url :</label>
+                        <input type="url" name="" value=""/>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Select :</label>
+                        <select name="">
+                            <option value="">Valeur 1</option>
+                            <option value="">Valeur 2</option>
+                        </select>
+                    </div>
+                    <div class="padding-bottom">
+                        <label class="block bold color-theme">Textarea :</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme">  
+                  <input type="checkbox" value="None" id="slide1" name="check" checked />
+                  <label for="slide1"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme-lighten">  
+                  <input type="checkbox" value="None" id="slide2" name="check" checked />
+                  <label for="slide2"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme-darken">  
+                  <input type="checkbox" value="None" id="slide3" name="check" checked />
+                  <label for="slide3"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme-secondary">  
+                  <input type="checkbox" value="None" id="slide4" name="check" checked />
+                  <label for="slide4"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme-secondary-lighten">  
+                  <input type="checkbox" value="None" id="slide5" name="check" checked />
+                  <label for="slide5"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide theme-secondary-darken">  
+                  <input type="checkbox" value="None" id="slide6" name="check" checked />
+                  <label for="slide6"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide conf">  
+                  <input type="checkbox" value="None" id="slide7" name="check" checked />
+                  <label for="slide7"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide warn">  
+                  <input type="checkbox" value="None" id="slide8" name="check" checked />
+                  <label for="slide8"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide err">  
+                  <input type="checkbox" value="None" id="slide9" name="check" checked />
+                  <label for="slide9"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-slide info">  
+                  <input type="checkbox" value="None" id="slide10" name="check" checked />
+                  <label for="slide10"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme">
+                  <input type="checkbox" value="None" id="round1" name="check" checked />
+                  <label for="round1"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme-lighten">
+                  <input type="checkbox" value="None" id="round2" name="check" checked />
+                  <label for="round2"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme-darken">
+                  <input type="checkbox" value="None" id="round3" name="check" checked />
+                  <label for="round3"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme-secondary">
+                  <input type="checkbox" value="None" id="round4" name="check" checked />
+                  <label for="round4"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme-secondary-lighten">
+                  <input type="checkbox" value="None" id="round5" name="check" checked />
+                  <label for="round5"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded theme-secondary-darken">
+                  <input type="checkbox" value="None" id="round6" name="check" checked />
+                  <label for="round6"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded conf">
+                  <input type="checkbox" value="None" id="round7" name="check" checked />
+                  <label for="round7"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded warn">
+                  <input type="checkbox" value="None" id="round8" name="check" checked />
+                  <label for="round8"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded err">
+                  <input type="checkbox" value="None" id="round9" name="check" checked />
+                  <label for="round9"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded info">
+                  <input type="checkbox" value="None" id="round10" name="check" checked />
+                  <label for="round10"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme">
+                  <input type="checkbox" value="None" id="round21" name="check" checked />
+                  <label for="round21"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme-lighten">
+                  <input type="checkbox" value="None" id="round22" name="check" checked />
+                  <label for="round22"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme-darken">
+                  <input type="checkbox" value="None" id="round23" name="check" checked />
+                  <label for="round23"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme-secondary">
+                  <input type="checkbox" value="None" id="round24" name="check" checked />
+                  <label for="round24"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme-secondary-lighten">
+                  <input type="checkbox" value="None" id="round25" name="check" checked />
+                  <label for="round25"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck theme-secondary-darken">
+                  <input type="checkbox" value="None" id="round26" name="check" checked />
+                  <label for="round26"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck conf">
+                  <input type="checkbox" value="None" id="round27" name="check" checked />
+                  <label for="round27"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck warn">
+                  <input type="checkbox" value="None" id="round28" name="check" checked />
+                  <label for="round28"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck err">
+                  <input type="checkbox" value="None" id="round29" name="check" checked />
+                  <label for="round29"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-rounded withCheck info">
+                  <input type="checkbox" value="None" id="round210" name="check" checked />
+                  <label for="round210"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme">
+                  <input type="checkbox" value="None" id="square1" name="check" checked />
+                  <label for="square1"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme-lighten">
+                  <input type="checkbox" value="None" id="square2" name="check" checked />
+                  <label for="square2"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme-darken">
+                  <input type="checkbox" value="None" id="square3" name="check" checked />
+                  <label for="square3"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme-secondary">
+                  <input type="checkbox" value="None" id="square4" name="check" checked />
+                  <label for="square4"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme-secondary-lighten">
+                  <input type="checkbox" value="None" id="square5" name="check" checked />
+                  <label for="square5"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared theme-secondary-darken">
+                  <input type="checkbox" value="None" id="square6" name="check" checked />
+                  <label for="square6"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared conf">
+                  <input type="checkbox" value="None" id="square7" name="check" checked />
+                  <label for="square7"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared warn">
+                  <input type="checkbox" value="None" id="square8" name="check" checked />
+                  <label for="square8"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared err">
+                  <input type="checkbox" value="None" id="square9" name="check" checked />
+                  <label for="square9"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared info">
+                  <input type="checkbox" value="None" id="square10" name="check" checked />
+                  <label for="square10"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme">
+                  <input type="checkbox" value="None" id="square21" name="check" checked />
+                  <label for="square21"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme-lighten">
+                  <input type="checkbox" value="None" id="square22" name="check" checked />
+                  <label for="square22"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme-darken">
+                  <input type="checkbox" value="None" id="square23" name="check" checked />
+                  <label for="square23"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme-secondary">
+                  <input type="checkbox" value="None" id="square24" name="check" checked />
+                  <label for="square24"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme-secondary-lighten">
+                  <input type="checkbox" value="None" id="square25" name="check" checked />
+                  <label for="square25"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck theme-secondary-darken">
+                  <input type="checkbox" value="None" id="square26" name="check" checked />
+                  <label for="square26"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck conf">
+                  <input type="checkbox" value="None" id="square27" name="check" checked />
+                  <label for="square27"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck warn">
+                  <input type="checkbox" value="None" id="square28" name="check" checked />
+                  <label for="square28"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck err">
+                  <input type="checkbox" value="None" id="square29" name="check" checked />
+                  <label for="square29"></label>
+                </div>
+            </li>
+            <li>
+                <div class="input-squared withCheck info">
+                  <input type="checkbox" value="None" id="square210" name="check" checked />
+                  <label for="square210"></label>
+                </div>
+            </li>
+            <!--
+            <li>
+                <div class="roundedTwo">
+                    <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+                    <label for="roundedTwo"></label>
+                </div>
+            </li>
+            
+            <li>
+                <div class="squaredOne">
+                  <input type="checkbox" value="None" id="squaredOne" name="check" checked />
+                  <label for="squaredOne"></label>
+                </div>
+            </li>
+            -->
+            <!--
+            <li>
+                <div class="squaredThree">
+                  <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+                  <label for="squaredThree"></label>
+                </div>
+            </li>
+            <li>
+                <div class="squaredFour">
+                  <input type="checkbox" value="None" id="squaredFour" name="check" checked />
+                  <label for="squaredFour"></label>
+                </div>
+            </li>
+            -->
+        </ul>
+    </article>
+
+    <article id="buttons" class="list scroll">
+        <ul>
+            <li>
+                <div class="padding-bottom">
+                    <button class="theme">Button .theme</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme small">Button .theme .small</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme big">Button .theme .big</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme large">Button .theme .large</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme xl">Button .theme .xl</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme xxl">Button .theme .xxl</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme tiny">Button .theme .tiny</button>
+                </div>
+                <div class="padding-bottom">
+                    <a href="" class="button theme">Link .button .theme</a>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme">Button .theme span.icon-<span class="icon-cog margin-left"></span></button>
+                </div>
+                <div class="padding-bottom">
+                    <a href="" class="button theme"><span class="icon-cog margin-right">Link .button .theme icon-cog</a>
+                </div>
+                <div class="padding-bottom">
+                    <button class="theme-secondary">Button .theme-secondary</button>
+                </div>
+                <div class="padding-bottom">
+                    <a href="" class="button theme-secondary">Link .button .theme-secondary</a>
+                </div>
+                <div class="padding-bottom">
+                    <button class="fullWidth theme">Button .theme .fullWidth</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="conf">Button .conf</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="warn">Button .warn</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="err">Button .err</button>
+                </div>
+                <div class="padding-bottom">
+                    <button class="info">Button .info</button>
+                </div>
+                <div class="padding-bottom">
+                    <a class="button disabled">Link .button .disabled</a>
+                </div>
+                <div class="padding-bottom">
+                    <button disabled>Button :disabled</button>
+                </div>
+                <div class="padding-bottom">
+                    <a href="" class="button theme-secondary fullWidth"><span class="icon-user margin-right"></span>Link button theme secondary fullWidth icon</a>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <article id="popin" class="list scroll">
+        <ul>
+            <li>
+                <a href="javascript:testLoader();" class="button theme-secondary">Loader</a>
+            </li>
+            <li>
+                <a href="javascript:testAlert();" class="button theme-secondary">Alert</a>
+            </li>
+            <li>
+                <a href="javascript:testConfirm();" class="button theme-secondary">Confirm</a>
+            </li>
+            <li>
+                <a href="javascript:testDialog();" class="button theme-secondary">Dialog</a>
+            </li>
+            <li>
+                <a href="javascript:openPreloader();" class="button theme-secondary">Preloader</a>
+            </li>
+        </ul>
+    </article>
+
+    <article id="gridSystem" class="list scroll">
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col-xs-1 col-m-6 col-l-3 col-xl-1 bck-theme">&nbsp;</div>
+                    <div class="col-xs-2 col-m-6 col-l-3 col-xl-1 bck-theme-secondary">&nbsp;</div>
+                    <div class="col-xs-4 col-m-6 col-l-3 col-xl-1 bck-theme-lighten">&nbsp;</div>
+                    <div class="col-xs-3 col-m-6 col-l-3 col-xl-1 bck-theme-darken">&nbsp;</div>
+                    <div class="col-xs-2 col-m-12 col-l-12 col-xl-1 bck-theme-desaturate">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-xs-offset-0 col-m-6 col-m-offset-1 col-l-3 col-l-offset-7 col-xl-3 col-xl-offset-4 bck-theme-desaturate">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-m-4 padding bck-theme">&nbsp;</div>
+                    <div class="col-xs-12 col-m-4 padding bck-theme-lighten">&nbsp;</div>
+                    <div class="col-xs-12 col-m-4 padding bck-theme-saturate">&nbsp;</div>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    
+
+
+    <nav data-role="groupBarBottom" data-for-articles="#panels-article #panels-article2 #panels-article3 #panels-article4">
+        <a href="#" data-view-article="#panels-article"><span class="icon-user"></span></a>
+        <a href="#" data-view-article="#panels-article2"><span class="icon-inbox"></span><span class="featherTag err">80</span></a>
+        <a href="#" data-view-article="#panels-article3"><span class="icon-comments"></span></a>
+        <a href="#" data-view-article="#panels-article4"><span class="icon-cog"></span></a>
+    </nav>
+</section>
+<!--<script type="text/javascript" src="cordova.js"></script>-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-events.min.js"></script>
+<script src="js/feather.min.js"></script>
+<script>
+
+function testLoader(){
+    Feather.loader('open');
+    setTimeout(function(){
+        Feather.loader('close');
+    },2000);
+}
+
+function testAlert(){
+    var htmlContent = '<h4 class="color-err">Alert html</h4><p class="padding-top color-black text justify">Le message html que vous souhaitez</p>';
+    var myCallback = function(){
+        Feather.alert("Vous avez fermé l'alert");
+    };
+    Feather.alert(htmlContent,{onExit:myCallback});
+}
+
+function testConfirm(){
+    var htmlContent = '<h4 class="color-info">Confirmation</h4><p class="padding-top">Souhaitez-vous utiliser Feather ?</p>';
+    Feather.confirm(htmlContent,{
+        onYes:function(){
+            Feather.alert(Feather.showConf("Super vous allez vous envoler !!"));
+        },
+        onNo:function(){
+            Feather.alert(Feather.showInfo("As you like...",{title:"Titre personnalisé",id:"MonId"}));
+        },
+        txtBtnYes: 'Oui absolument',
+        txtBtnNo: 'Je ne pense pas'
+    });
+}
+
+function testDialog(){
+    var htmlContent = '<div class="padding"><p class="padding-bottom">Dans cette dialog je met ce que je veux dans l\'ordre que je veux.</p>';
+    htmlContent += Feather.showConf("Une confirmation")+"<br/>";
+    htmlContent += Feather.showErr("Une erreur")+"<br/>";
+    htmlContent += Feather.showWarn("Un avertissement")+"<br/>";
+    htmlContent += Feather.showInfo("Une info")+"<br/>";
+    htmlContent += '<a class="fullWidth big button theme" href="javascript:Feather.dialog.close();"><span class="icon-times margin-right"></span>Je ferme cette dialog</a></div>';
+    Feather.dialog.open(htmlContent);
+}
+
+function openPreloader(){
+    Feather.preloader.open();
+    setTimeout(function(){
+        Feather.preloader.close();
+    },2000);
+}
+
+
+//document.addEventListener("deviceReady", deviceReady, false);
+$(document).ready(function(){deviceReady();});
+function deviceReady(){
+    Feather.init({
+        asyncRessources:['./ressources/menus/asideMenu.html'],
+        configFile: './myConfig.json',
+        onFeatherReady: function(){
+            Feather.alert('L\'application Feather est prète. L\'event touchend/click activé pour cet appareil est "'+Feather.touchendEvent+'"');
+        }
+    });
+
+
+    
+    /*$(document).on('orientationchange',function(e){
+        alert("orientationchange");
+    });
+     $(document).on('swipeleft',function(e){
+        alert("swipeleft");
+    });
+     $(document).on('swipeup',function(e){
+        alert("swipeup");
+    });
+     $(document).on('swipedown',function(e){
+        alert("swipedown");
+    });
+    $(document).on('taphold',function(e){
+        alert("taphold");
+    });
+    $(document).on('singletap',function(e){
+        alert("singletap");
+    });
+    $(document).on('doubletap',function(e){
+        alert("doubletap");
+    });*/
+}
+</script>
+</div>
+</body>
+</html>

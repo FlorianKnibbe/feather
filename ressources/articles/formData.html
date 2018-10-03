@@ -1,0 +1,78 @@
+<article id="formData" class="list scroll form">
+        <ul>
+            <li>
+                <form id="myForm">
+                <div class="row">
+                    <div class="col-m-12">
+                        <label class="color-theme text bold">Votre nom : </label>
+                        <input title="Veuillez saisir votre nom au format alphabétique" pattern="[A-z]*" required type="text" name="nom" value=""/>
+                    </div>
+                </div>
+                <div class="row padding-top">
+                    <div class="col-m-12">
+                        <label class="color-theme text bold">Mes plats favoris ?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4">
+                        <input data-required="+" title="Veuillez cocher au moins un plat favoris" type="checkbox" name="plats[]" value="frites"/> Frites
+                    </div>
+                    <div class="col-m-4">
+                        <input data-required="+" title="Veuillez cocher au moins un plat favoris" type="checkbox" name="plats[]" value="burger"/> Burger
+                    </div>
+                    <div class="col-m-4">
+                        <input data-required="+" title="Veuillez cocher au moins un plat favoris" type="checkbox" name="plats[]" value="pizza"/> Pizza
+                    </div>
+                </div>
+                <div class="row padding-top">
+                    <div class="col-m-12">
+                        <label class="text bold color-theme">Boisson favorite ?</label>
+                        <select name="boisson">
+                            <option value="Soda">Soda</option>
+                            <option value="Bière">Bière</option>
+                            <option value="Café">Café</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row padding-top">
+                    <div class="col-m-12">
+                        <label class="text bold color-theme">Avec combien de sucre votre café/thé ?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4">
+                        <input type="radio" required name="sucre" value="0"/> 0
+                    </div>
+                    <div class="col-m-4">
+                        <input type="radio" required name="sucre" value="1"/> 1
+                    </div>
+                    <div class="col-m-4">
+                        <input type="radio" required name="sucre" value="2"/> 2
+                    </div>
+                </div>
+                <div class="row padding-top">
+                    <div class="column_12">
+                        <label class="text bold color-theme">Coding ?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4">
+                        <input type="checkbox" data-required="2+" title="Veuillez cocher au moins 2 langages de coding" name="coding[php]" value="Oui"/> Php
+                    </div>
+                    <div class="col-m-4">
+                        <input type="checkbox" data-required="2+" title="Veuillez cocher au moins 2 langages de coding" name="coding[html]" value="Oui"/> Html
+                    </div>
+                    <div class="col-m-4">
+                        <input type="checkbox" data-required="2+" title="Veuillez cocher au moins 2 langages de coding" name="coding[js]" value="Oui"/> Js
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-12">
+                        <button type="button" class="conf fullWidth margin-top" data-view-article="#submitDataForm" data-validPost data-sendPost="#formData" data-async-article="./ressources/articles/submitFormData.html" data-force-async-article>Valider</button>
+                    </div>
+                </div>
+            </li>
+            </form>
+        </ul>
+
+</article>

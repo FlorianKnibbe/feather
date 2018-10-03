@@ -1,0 +1,23 @@
+{ 
+  "AppName": "Application d'exemple", 
+  "AppVersion": "1.1",
+  "adminMail": "admin@admin.fr",
+  "devMails": [ 
+      {
+          "name": "Simon", 
+          "mail:"simon@dev.fr"
+      }, 
+      {
+          "name": "Robin", 
+          "mail": "robin@dev.fr"
+      }, 
+      {
+          "name": "David",
+          "mail": "david@dev.fr"
+      }
+   ],
+   "Licence": {
+   		"2015": "GNU LGPL",
+   		"auteur": "Florian Knibbe"
+   }
+} 

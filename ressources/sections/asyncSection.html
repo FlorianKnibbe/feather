@@ -1,0 +1,27 @@
+<!-- Section chargée de façon asynchrone -->
+    <section id="asyncSection">
+        <header>
+            <nav class="on-left">
+                <a class="button color-theme-darken hover-white" data-view-section="#main">
+                    <span class="icon-arrow-left"></span>
+                </a>
+            </nav>
+            <h1 class="title">Asyn section</h1>
+
+        </header>
+
+        <nav data-role="groupBarTop" data-for-articles="#syncArticle #asyncArticle #asyncArticleForce">
+            <a href="#" data-view-article="#syncArticle"><abbr>Sync Article</abbr></a>
+            <a href="#" data-view-article="#asyncArticle" data-async-article="./ressources/articles/asyncArticle.html"><abbr>Async Article</abbr></a>
+            <a href="#" data-view-article="#asyncArticleForce" data-force-async-article data-async-article="./ressources/articles/asyncArticleForce.html"><abbr>Async forcé</abbr></a>
+        </nav>
+
+        <article id="syncArticle" class="list scroll text justify">
+            <ul>
+                <li class="text small">
+                    Cette section est chargé de façon asynchrone mais l'article est chargé de façon synchrone.<br/>
+                    La section est chargé par le fichier ./asyncSection.html
+                </li>
+            </ul>
+        </article>
+    </section>

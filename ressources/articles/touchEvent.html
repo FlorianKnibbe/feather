@@ -1,0 +1,65 @@
+<article id="touchEvent" class="list">
+        <ul>
+            <li>
+                <div id="eventListener" class="bck-white text center" style="height:200px">
+                    Touch here !
+                </div>
+                <div id="consoleEvent" class="bck-black color-white scroll" style="height:200px">
+                    &nbsp;
+                </div>
+            </li>
+        </ul>
+        <script>
+            $('#eventListener').on('vclick',function(e,touch){
+                $('#consoleEvent').prepend("<p>Vclick event</p>");
+            });
+            $('#eventListener').on('tap',function(e,touch){
+                $('#consoleEvent').prepend("<p>Tap event</p>");
+            });
+            $('#eventListener').on('tapstart',function(e,touch){
+                $('#consoleEvent').prepend("<p>TapStart event</p>");
+            });
+            $('#eventListener').on('taphold',function(e,touch){
+                $('#consoleEvent').prepend("<p>TapHold event</p>");
+            });
+            $('#eventListener').on('tapend',function(e,touch){
+                $('#consoleEvent').prepend("<p>TapEnd event</p>");
+            });
+            $('#eventListener').on('tapmove',function(e,touch){
+                $('#consoleEvent').prepend("<p>TapMove event</p>");
+            });
+            $('#eventListener').on('singletap',function(e,touch){
+                $('#consoleEvent').prepend("<p>SingleTap event</p>");
+            });
+            $('#eventListener').on('doubletap',function(e,touch){
+                $('#consoleEvent').prepend("<p>DoubleTap event</p>");
+            });
+            $('#eventListener').on('swipeleft',function(e,touch){
+                $('#consoleEvent').prepend("<p>SwipeLeft event</p>");
+            });
+            $('#eventListener').on('swiperight',function(e,touch){
+                $('#consoleEvent').prepend("<p>SwipeRight event</p>");
+            });
+            $('#eventListener').on('swipe',function(e,touch){
+                $('#consoleEvent').prepend("<p>Swipe event</p>");
+            });
+            $('#eventListener').on('swipeup',function(e,touch){
+                $('#consoleEvent').prepend("<p>SwipeUp event</p>");
+            });
+            $('#eventListener').on('swipedown',function(e,touch){
+                $('#consoleEvent').prepend("<p>SwipeDown event</p>");
+            });
+            $('#eventListener').on('swipeend',function(e,touch){
+                $('#consoleEvent').prepend("<p>SwipeEnd event</p>");
+            });
+            $('#eventListener').on('scrollstart',function(e,touch){
+                $('#consoleEvent').prepend("<p>ScrollStart event</p>");
+            });
+            $('#eventListener').on('scrollend',function(e,touch){
+                $('#consoleEvent').prepend("<p>ScrollEnd event</p>");
+            });
+            $('#eventListener').on('orientationchange',function(e,touch){
+                $('#consoleEvent').prepend("<p>OrientationChange event</p>");
+            });
+        </script>
+</article>
